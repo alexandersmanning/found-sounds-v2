@@ -1,0 +1,9 @@
+{
+  "name": "found-sounds-v2",
+  "version": "2.0.0",
+  "description": "A rewrite of Found Sounds using Nodes",
+  "main": "index.js",
+  "author": "alexandersmanning <alexandersmanning@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
