@@ -5,5 +5,23 @@
   "main": "index.js",
   "author": "alexandersmanning <alexandersmanning@gmail.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "scripts": {
+    "scss": "node-sass --include-path scss assets/scss/main.scss public/css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run scss\"",
+    "start-dev": "nodemon index.js & nodemon -e scss -x \"npm run scss\""
+  },
+  "dependencies": {
+    "eslint": "^4.13.0",
+    "foreman": "^2.0.0",
+    "router": "^1.3.2"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.5.1",
+    "node-sass": "^4.7.2",
+    "nodemon": "^1.12.5"
+  }
 }

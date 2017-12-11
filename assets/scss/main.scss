@@ -1,0 +1,33 @@
+$charcoal: #36454f;
+
+.main-page {
+  height: 100vh;
+  width: 100vw;
+
+  &__content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-family: 'Pacifico', cursive;
+    color: $charcoal;
+  }
+
+  &__image {
+    &-container {
+      position: relative;
+    }
+
+    &-text {
+      position: absolute;
+      top: 20%;
+      left: 43%;
+      color: $charcoal;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+  }
+}
